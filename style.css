@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #f1f1f1;
+  background-image: url("data:image/svg+xml,%3Csvg width='48' height='64' viewBox='0 0 48 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M48 28v-4L36 12 24 24 12 12 0 24v4l4 4-4 4v4l12 12 12-12 12 12 12-12v-4l-4-4 4-4zM8 32l-6-6 10-10 10 10-6 6 6 6-10 10L2 38l6-6zm12 0l4-4 4 4-4 4-4-4zm12 0l-6-6 10-10 10 10-6 6 6 6-10 10-10-10 6-6zM0 16L10 6 4 0h4l4 4 4-4h4l-6 6 10 10L34 6l-6-6h4l4 4 4-4h4l-6 6 10 10v4L36 8 24 20 12 8 0 20v-4zm0 32l10 10-6 6h4l4-4 4 4h4l-6-6 10-10 10 10-6 6h4l4-4 4 4h4l-6-6 10-10v-4L36 56 24 44 12 56 0 44v4z' fill='%23191919' fill-opacity='0.12' fill-rule='evenodd'/%3E%3C/svg%3E");
+  font-family: 'Roboto';
+  color: #2f2f2f;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.quote-container {
+  /* width: auto = occupies all available horizontal space within its containing block*/
+  width: auto;
+  max-width: 800px;
+  padding: 20px 30px;
+  box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.15);
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+}
+
+.quote-text {
+  font-size: 2.25rem;
+  font-weight: 400;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.fa-quote-left {
+  font-size: 2.5rem;
+}
+
+.quote-author {
+  font-size: 1.75rem;
+  font-weight: 300;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.3rem;
+  border: none;
+  border-radius: 10px;
+  background: #333;
+  color: #fff;
+  outline: none;
+  padding: 0.4rem 1.2rem;
+  box-shadow: 0 0.15rem rgba(121, 121, 121, 0.65);
+}
+button:hover{
+  background: rgba(51, 51, 51, 0.85);
+}
+button:active {
+  transform: translate(0, 0.15rem);
+  transition: transform 0.1s ease-in;
+  box-shadow: none;
+}
+
+.twitter-button:hover {
+  background: #38a1f3;
+}
+.fa-twitter {
+  font-size: 1.2rem;
+}
+.fa-twitter:hover {
+  background: #38a1f3;
+}
+
+
+
+
+/* Media Queries */
+
+/* Between 300-900px view width */
+@media screen and (min-width:300px) and (max-width:900px) {
+  .quote-container {
+    margin:auto 10px;
+  }
+}
+/* Less than 425px view width */
+@media screen and (max-width:425px) {
+  .quote-text {
+    font-size: 1.8rem;
+  }
+}
+
